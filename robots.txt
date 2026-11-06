@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sergiupogor.github.io/viraltap-app/sitemap.xml

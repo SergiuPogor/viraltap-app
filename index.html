@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ViralTap: make short videos in one tap</title>
+<meta name="description" content="ViralTap turns a quiz, a story or a poll into a vertical video with voiceover, word-by-word captions and music. Made on your phone. No account, no ads, works offline.">
+<link rel="canonical" href="https://sergiupogor.github.io/viraltap-app/">
+<meta name="theme-color" content="#120f22">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preload" href="assets/poppins-800.ttf" as="font" type="font/ttf" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:title" content="ViralTap: make short videos in one tap">
+<meta property="og:description" content="Quiz, story, poll and countdown videos with voice, captions and music. Made on your phone.">
+<meta property="og:url" content="https://sergiupogor.github.io/viraltap-app/">
+<meta property="og:image" content="https://sergiupogor.github.io/viraltap-app/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ViralTap","operatingSystem":"Android","applicationCategory":"MultimediaApplication","description":"Make vertical quiz, story, poll and countdown videos with voiceover, captions and music, on your phone.","url":"https://sergiupogor.github.io/viraltap-app/","publisher":{"@type":"Organization","name":"MEDIAPRONET SRL","email":"mediapronetsrl@gmail.com","address":{"@type":"PostalAddress","addressCountry":"MD"}},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./" aria-label="ViralTap home"><span class="mark"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span>ViralTap</a>
+    <nav aria-label="Main">
+      <a class="hide-sm" href="#how">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="support.html">Help</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="hero">
+      <div class="hero-copy">
+        <h1><span>Pick a topic.</span><span>Tap once.</span><span>Post it.</span></h1>
+        <p class="lede">ViralTap turns a quiz, a story or a poll into a vertical video with a voiceover, word-by-word captions, a moving background and music. It is made right on your phone, ready to share.</p>
+        <div class="cta">
+          <span class="play" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M3.6 1.8 13.4 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M16.8 8.6 13.4 12 3.6 1.8c.2-.1.5-.1.8.1z"/><path fill="#ff3a44" d="m16.8 15.4-12.4 6.7c-.3.2-.6.2-.8.1L13.4 12z"/><path fill="#ffd500" d="m20.5 10.6-3.7-2L13.4 12l3.4 3.4 3.7-2c.9-.6.9-2.2 0-2.8z"/></svg><span><small>Coming soon to</small><b>Google Play</b></span></span>
+          <a class="textlink" href="#how">See how it works</a>
+        </div>
+        <ul class="promises" aria-label="What you will not find">
+          <li>No account</li>
+          <li>No ads</li>
+          <li>Works offline</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <div class="phone">
+          <div class="screen" id="screen" role="img" aria-label="Animated example of a video made with ViralTap">
+            <div class="orbs" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>ViralTap</span>
+            <div class="prog" aria-hidden="true"><i></i></div>
+          </div>
+        </div>
+        <fieldset class="formats">
+          <legend>Choose a format to preview</legend>
+          <input type="radio" name="format" id="f-quiz" value="quiz" checked><label for="f-quiz">Quiz</label>
+          <input type="radio" name="format" id="f-story" value="story"><label for="f-story">Story</label>
+          <input type="radio" name="format" id="f-wyr" value="wyr"><label for="f-wyr">Would you rather</label>
+          <input type="radio" name="format" id="f-top5" value="top5"><label for="f-top5">Top 5</label>
+          <input type="radio" name="format" id="f-ff" value="factfake"><label for="f-ff">Fact or fake</label>
+        </fieldset>
+        <button class="pause" id="pause" type="button" aria-pressed="false" aria-controls="screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1h3.5v14H3zM9.5 1H13v14H9.5z"/></svg><span>Pause demo</span></button>
+      </div>
+    </div>
+
+    <section id="how" aria-labelledby="how-h">
+      <h2 id="how-h">From idea to posted in three taps</h2>
+      <p class="intro">No camera, no editing timeline and no blank page. Pick what kind of video you want and the app does the rest.</p>
+      <ol class="steps">
+        <li><h3>Pick a format</h3><p>Choose a quiz, story, poll, Top 5 or Fact or fake, then a topic. Or tap Surprise me.</p></li>
+        <li><h3>Tap Generate</h3><p>ViralTap writes the scenes, reads them aloud, times the captions to each word and adds music.</p></li>
+        <li><h3>Share it</h3><p>Send it to the app you post on or save it to your gallery. A caption and hashtags are ready to paste.</p></li>
+      </ol>
+      <div class="shots">
+        <figure><img src="assets/shot-1-home.webp" width="480" height="960" loading="lazy" alt="ViralTap home screen with Surprise me, trending topics and four formats"><figcaption>Pick a format or a trending topic</figcaption></figure>
+        <figure><img src="assets/shot-3-story.webp" width="540" height="960" loading="lazy" alt="A story video frame with large captions"><figcaption>Stories with word-by-word captions</figcaption></figure>
+        <figure><img src="assets/shot-4-facts.webp" width="540" height="960" loading="lazy" alt="A Top 5 facts video frame"><figcaption>Countdowns of surprising facts</figcaption></figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="make-h">
+      <h2 id="make-h">Made for the way you post</h2>
+      <p class="intro">Every video is vertical 9:16, timed to stay short, and finished with a voice, captions and a soundtrack.</p>
+      <div class="feats">
+        <div><h3>Hundreds of ideas built in</h3><p>Quiz questions, flags, emoji riddles, short stories, polls and fact lists, so you never start from nothing.</p></div>
+        <div><h3>Your own words and media</h3><p>Type your own question or story, and use a photo or video from your phone as the background.</p></div>
+        <div><h3>Your name on every video</h3><p>Add your @handle once and it appears on everything you make.</p></div>
+        <div><h3>Caption looks and voices</h3><p>Pick a caption style, a voice and a speed. Voices come from your phone and work offline.</p></div>
+        <div><h3>Part 2, in the same style</h3><p>Make a follow-up that matches the first video, so viewers come back for the next part.</p></div>
+        <div><h3>Ready-to-paste captions</h3><p>Each video comes with a caption idea and hashtags for the topic.</p></div>
+      </div>
+    </section>
+
+    <section id="privacy" aria-labelledby="priv-h">
+      <div class="private">
+        <div>
+          <h2 id="priv-h">Your videos never leave your phone</h2>
+          <p class="intro">ViralTap does not even have permission to use the internet, so it cannot send your videos, text or photos anywhere. There is no sign-up, no ads and no tracking. You decide what gets shared, and where.</p>
+          <p><a class="textlink" href="privacy.html">Read the privacy policy</a></p>
+        </div>
+        <ul aria-label="Where your data stays">
+          <li><b>Videos you make</b><span>On your phone</span></li>
+          <li><b>Text you type</b><span>On your phone</span></li>
+          <li><b>Photos and videos you pick</b><span>On your phone</span></li>
+          <li><b>Voice narration</b><span>On your phone</span></li>
+          <li><b>Account details</b><span>None needed</span></li>
+          <li><b>Ads and trackers</b><span>None</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-h">
+      <h2 id="faq-h">Questions</h2>
+      <div class="faq">
+        <details><summary>Is ViralTap free?</summary><p>Yes. You can make up to 10 videos a day for free. Free videos carry a small ViralTap badge and end card. A Pro plan is planned but is not on sale yet.</p></details>
+        <details><summary>Do I need an account or an internet connection?</summary><p>Neither. Videos are made entirely on your phone, so you can create offline as long as your phone has an offline voice installed. You only need a connection to post the video in another app.</p></details>
+        <details><summary>Can I post the videos and earn from them?</summary><p>Yes. You may use videos you make for personal and commercial purposes, including monetised posts. You are responsible for any text or media you add yourself. See the <a href="terms.html">Terms of Use</a>.</p></details>
+        <details><summary>There is no voice, or it sounds wrong</summary><p>Voices come from your phone. In the app, open Settings and tap Install or manage voices to add an offline voice.</p></details>
+        <details><summary>Where are my videos saved?</summary><p>In the app's library. Videos you save to your phone appear in your gallery in the Movies/ViralTap folder.</p></details>
+        <details><summary>How do I delete my data?</summary><p>Everything is on your phone and there is no account to close. Delete videos in the app, or uninstall it to remove everything.</p></details>
+      </div>
+      <p style="margin-top:32px"><a class="textlink" href="support.html">More help and contact</a></p>
+    </section>
+  </main>
+</div>
+<footer class="site"><div class="wrap"><div class="row">
+<div><p><b>ViralTap</b> is made by MEDIAPRONET SRL, Republic of Moldova.</p><p><a href="mailto:mediapronetsrl@gmail.com">mediapronetsrl@gmail.com</a></p></div>
+<nav aria-label="Legal and help"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="subscriptions.html">Subscriptions and Refunds</a><a href="licenses.html">Licenses</a><a href="support.html">Help and Support</a></nav>
+</div><p style="margin-top:24px">© 2026 MEDIAPRONET SRL. Google Play is a trademark of Google LLC.</p></div></footer>
+<script src="demo.js" defer></script>
+</body>
+</html>
