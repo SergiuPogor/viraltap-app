@@ -102,6 +102,27 @@ a{color:inherit}
 .pause{display:inline-flex;align-items:center;gap:8px;background:none;border:0;color:var(--muted);font:600 14px var(--body);cursor:pointer;padding:6px 10px;border-radius:8px}
 .pause:hover{color:var(--text)}
 .pause svg{width:14px;height:14px;fill:currentColor}
+.controls{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.pause.sound{color:var(--text);box-shadow:inset 0 0 0 1px var(--line);border-radius:99px;padding:8px 16px}
+.pause.sound[aria-pressed="true"]{background:var(--sun);color:var(--ink);box-shadow:none}
+.pause:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.demo-hint{margin:-4px 0 0;font-size:14px;color:var(--muted);text-align:center;min-height:1.4em}
+.choices{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:3cqw;width:100%;margin-top:5%}
+.choices button,.vs button.opt{font:800 6.4cqw/1.1 var(--display);color:#fff;border:0;cursor:pointer;text-align:center;transition:transform .15s,background .2s,box-shadow .2s}
+.choices button{padding:4.5cqw 2cqw;border-radius:5cqw;background:rgba(12,9,24,.72);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.22)}
+.choices button:hover:not(:disabled),.vs button.opt:hover:not(:disabled){transform:scale(1.04);box-shadow:inset 0 0 0 2px var(--sun)}
+.choices button:active:not(:disabled),.vs button.opt:active:not(:disabled){transform:scale(.96)}
+.choices button:focus-visible,.vs button.opt:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.choices button.picked{background:var(--sun);color:#120f22;box-shadow:none}
+.choices button:disabled:not(.picked){opacity:.45;cursor:default}
+.vs button.opt{width:100%;display:flex;justify-content:space-between;align-items:center;gap:3cqw}
+.vs button.opt:disabled{cursor:default}
+.vs button.opt.picked{box-shadow:inset 0 0 0 2.5px var(--sun)}
+.opt em{position:relative;font-style:normal;font-size:5cqw;opacity:0;transition:opacity .4s .5s}
+.vs.voted .opt em{opacity:1}
+.you{font:800 6cqw/1.1 var(--display);margin:5% 0 0}
+.you.ok{color:var(--aqua)}
+.you.no{color:var(--rose)}
 
 /* Sections */
 section{padding:clamp(56px,9vw,112px) 0;border-top:1px solid var(--line)}
@@ -188,5 +209,5 @@ body.doc footer.site a:hover{color:var(--doc-text)}
 }
 @media (prefers-reduced-motion:reduce){
   .orbs i,.scene.in,.ring .arc{animation:none}
-  .opt .fill,.caps span{transition:none}
+  .opt .fill,.caps span,.choices button,.vs button.opt,.opt em{transition:none}
 }

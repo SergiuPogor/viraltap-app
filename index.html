@@ -51,7 +51,7 @@
 
       <div class="stage">
         <div class="phone">
-          <div class="screen" id="screen" role="img" aria-label="Animated example of a video made with ViralTap">
+          <div class="screen" id="screen" role="region" aria-label="Playable example of a video made with ViralTap">
             <div class="orbs" aria-hidden="true"><i></i><i></i><i></i></div>
             <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>ViralTap</span>
             <div class="prog" aria-hidden="true"><i></i></div>
@@ -65,7 +65,11 @@
           <input type="radio" name="format" id="f-top5" value="top5"><label for="f-top5">Top 5</label>
           <input type="radio" name="format" id="f-ff" value="factfake"><label for="f-ff">Fact or fake</label>
         </fieldset>
-        <button class="pause" id="pause" type="button" aria-pressed="false" aria-controls="screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1h3.5v14H3zM9.5 1H13v14H9.5z"/></svg><span>Pause demo</span></button>
+        <p class="demo-hint" id="demo-hint" aria-live="polite">Tap an answer before the timer runs out.</p>
+        <div class="controls">
+          <button class="pause sound" id="sound" type="button" aria-pressed="false" aria-controls="screen"><svg viewBox="0 0 16 16" aria-hidden="true"></svg><span>Sound on</span></button>
+          <button class="pause" id="pause" type="button" aria-pressed="false" aria-controls="screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1h3.5v14H3zM9.5 1H13v14H9.5z"/></svg><span>Pause demo</span></button>
+        </div>
       </div>
     </div>
 
